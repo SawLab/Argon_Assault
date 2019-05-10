@@ -2,20 +2,21 @@
 
 public class Enemy : MonoBehaviour
 {
+
+    [SerializeField] GameObject deathFX;
+    [SerializeField] Transform parent;
+
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Collider enemyBoxCollider = gameObject.AddComponent<BoxCollider>();
+        enemyBoxCollider.isTrigger = false;
     }
 
     void OnParticleCollision(GameObject other)
     {
-        Destroy(this);
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parent;
+        Destroy(gameObject);
     }
 }
