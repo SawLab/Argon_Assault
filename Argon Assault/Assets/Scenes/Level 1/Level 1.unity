@@ -161,7 +161,12 @@ PrefabInstance:
     - target: {fileID: 4113716798512051551, guid: 1b2cf45768b32084783a1c838fe80421,
         type: 3}
       propertyPath: m_Name
-      value: Bullets Right
+      value: Gun Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113716798512051551, guid: 1b2cf45768b32084783a1c838fe80421,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4113716798512051550, guid: 1b2cf45768b32084783a1c838fe80421,
         type: 3}
@@ -974,6 +979,12 @@ Transform:
   m_Father: {fileID: 1047516833}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &907600310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4113716798512051551, guid: 1b2cf45768b32084783a1c838fe80421,
+    type: 3}
+  m_PrefabInstance: {fileID: 4113716800129606025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &952603777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1651,6 +1662,12 @@ Transform:
   m_Father: {fileID: 1047516833}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1568652440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4113716798512051551, guid: 1b2cf45768b32084783a1c838fe80421,
+    type: 3}
+  m_PrefabInstance: {fileID: 124416294}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1590400693 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649,
@@ -1933,6 +1950,9 @@ MonoBehaviour:
   positionYawFactor: 5
   controlRollFactor: -20
   controlPitchFactor: -20
+  guns:
+  - {fileID: 907600310}
+  - {fileID: 1568652440}
 --- !u!114 &1841239238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2151,7 +2171,12 @@ PrefabInstance:
     - target: {fileID: 4113716798512051551, guid: 1b2cf45768b32084783a1c838fe80421,
         type: 3}
       propertyPath: m_Name
-      value: Bullets Left
+      value: Gun Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113716798512051551, guid: 1b2cf45768b32084783a1c838fe80421,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4113716798512051550, guid: 1b2cf45768b32084783a1c838fe80421,
         type: 3}
