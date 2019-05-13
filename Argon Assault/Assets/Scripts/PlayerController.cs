@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlPitchFactor = -20f;
 
     [SerializeField] GameObject[] guns;
+    [SerializeField] GameObject[] disableOnDeath;
 
     float xThrow, yThrow;
     bool isControlEnabled = true;
@@ -67,6 +68,12 @@ public class PlayerController : MonoBehaviour
         //Set player ship invisible on death
         MeshRenderer mesh = gameObject.GetComponent<MeshRenderer>(); 
         mesh.enabled = false;
+
+        foreach(GameObject gameObject in disableOnDeath)
+        {
+            var emissionModule = gameObject.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = false;                                             //stop emitting any particles attached to player ship
+        }
     }
 
     private void ProcessRotation()
