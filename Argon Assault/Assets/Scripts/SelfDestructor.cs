@@ -9,10 +9,4 @@ public class SelfDestructor : MonoBehaviour
     {
         Destroy(gameObject, timeTillDeletion);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
