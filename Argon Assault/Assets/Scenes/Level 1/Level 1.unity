@@ -252,7 +252,7 @@ PrefabInstance:
     - target: {fileID: 4113716798512051551, guid: 1b2cf45768b32084783a1c838fe80421,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4113716798512051550, guid: 1b2cf45768b32084783a1c838fe80421,
         type: 3}
@@ -308,6 +308,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113716798512051536, guid: 1b2cf45768b32084783a1c838fe80421,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113716798512051536, guid: 1b2cf45768b32084783a1c838fe80421,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b2cf45768b32084783a1c838fe80421, type: 3}
@@ -3270,7 +3280,7 @@ PrefabInstance:
     - target: {fileID: 4113716798512051551, guid: 1b2cf45768b32084783a1c838fe80421,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4113716798512051550, guid: 1b2cf45768b32084783a1c838fe80421,
         type: 3}
@@ -3346,6 +3356,16 @@ PrefabInstance:
         type: 3}
       propertyPath: CollisionModule.collisionMessages
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113716798512051536, guid: 1b2cf45768b32084783a1c838fe80421,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113716798512051536, guid: 1b2cf45768b32084783a1c838fe80421,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b2cf45768b32084783a1c838fe80421, type: 3}
