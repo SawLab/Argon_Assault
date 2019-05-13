@@ -54,6 +54,10 @@ public class PlayerController : MonoBehaviour
     void OnPlayerDeath() // called by string reference
     {
         isControlEnabled = false;
+
+        //Set player ship invisible on death
+        MeshRenderer mesh = gameObject.GetComponent<MeshRenderer>(); 
+        mesh.enabled = false;
     }
 
     private void ProcessRotation()
